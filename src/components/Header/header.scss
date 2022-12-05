@@ -11,14 +11,18 @@
     align-items: center;
     height: 100%;
     background-color: $color-header;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
     .logo_icon {
-      display: inline-block;
       content: url("../../assets/logo.svg");
       cursor: pointer;
       height: 30px;
       width: 30px;
       filter: invert(75%) sepia(70%) saturate(2266%) hue-rotate(77deg) brightness(97%) contrast(93%);
+
     }
     .logo_title {
       color: $color-line;
@@ -26,7 +30,7 @@
       text-decoration: none;
       font-weight:bold;
       font-size: 30px;
-      padding-left:10px;
+      padding-left:5px;
     }
   }
 

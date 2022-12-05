@@ -1,84 +1,92 @@
 {
   "travels":[
     {
-      "name":"Rajski wypoczynek na wyspie",
+      "name":" Wypoczynek na wyspie",
       "country": "Mauritius",
-      "start-date": "2023-01-20",
-      "end-date": "2023-02-01",
+      "start": "2023-01-20",
+      "end": "2023-02-01",
       "price": 5000,
       "places": 10,
       "description": "Wypoczynek na piaszczytych plażach",
-      "photo": "assets/mauritius.jpg"
+      "image": "https://assets.euromoneydigital.com/dims4/default/90a4827/2147483647/strip/true/crop/4160x3060+0+0/resize/840x618!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F1e%2F9b%2Fee6cb2414540b95c4851b4198575%2Fgreece-athens-adobemarch22.jpeg",
+      "id": 1
     },
     {
-      "name": "Odkryj piękno Madagaskaru",
+      "name": "Piękno Madagaskaru",
       "country": "Madagaskar",
-      "start-date": "2023-02-15",
-      "end-date": "2023-03-01",
+      "start": "2023-02-15",
+      "end": "2023-03-01",
       "price":6000,
       "places":10,
       "description": "Wycieczka objazdowa po Madagaskarze",
-      "photo": "assets/madagaskar.jpg"
+      "image": "../assets/madagaskarr.jpg",
+      "id": 2
     },
     {
-      "name": "Odkryj najpięniejsze zakamarki Reunion",
+      "name": "Odkryj Reunion",
       "country": "Reunion",
-      "start-date": "2023-02-27",
-      "end-date": "2023-03-13",
+      "start": "2023-02-27",
+      "end": "2023-03-13",
       "price": 5000,
       "places": 8,
-      "description":"Wycieczka objazdowa po Reunion",
-      "photo": "assets/reunion.jpg"
+      "description":"Wycieczka po Reunion",
+      "image": "../assets/reunionn.jpg",
+      "id": 3
     },
     {
-      "name": "Zdobyj najwyższy szczyt Niemiec",
+      "name": "Najwyższy szczyt Niemiec",
       "country": "Niemcy",
-      "start-date": "2023-07-01",
-      "end-date":"2023-07-09",
+      "start": "2023-07-01",
+      "end":"2023-07-09",
       "price": 3000,
       "places": 15,
-      "description": "Wycieczki górski po alpach bawarskich z wyjściem na Zugspitze",
-      "photo": "assets/zugspitze.jpg"
+      "description": "Wyjście na Zugspitze",
+      "image": "../assets/zugspitzee.jpg",
+      "id": 4
     },
     {
-      "name": "Odkryj piękno Pirenei",
+      "name": "Pireneje",
       "country": "Francja",
-      "start-date": "2023-07-01",
-      "end-date":"2023-07-09",
+      "start": "2023-07-01",
+      "end":"2023-07-09",
       "price": 4000,
       "places": 15,
-      "description": "Wycieczki górskie po francuskich Pirenejach ",
-      "photo":"assets/pyrenees.jpg"
+      "description": "Wycieczki górskie po Pirenejach ",
+      "image":"../assets/pyreneess.jpg",
+      "id": 5
     },
     {
-      "name": "Szusuj po puchu w Gudari",
+      "name": "Szusuj po puchu",
       "country": "Gruzja",
-      "start-date": "2023-03-20",
-      "end-date": "2023-04-01",
+      "start": "2023-03-20",
+      "end": "2023-04-01",
       "price": 4500,
       "places": 10,
-      "description": "Wyjazd do resortu narciarskiego w Gudauri",
-      "photo": "assets/gudauri.jpg"
+      "description": "Wyjazd do resortu w Gudauri",
+      "image": "/assets/gudaurii.jpg",
+      "id": 6
     },
     {
       "name": "Skitury w Kazbegi",
       "country": "Gruzja",
-      "start-date": "2023-03-20",
-      "end-date": "2023-04-01",
+      "start": "2023-03-20",
+      "end": "2023-04-01",
       "price": 4000,
       "places": 8,
-      "description": "Wyjazd na skitoury do dizkiego Kazbegi",
-      "photo": "assets/kazbegi.jpg"
+      "description": "Wyjazd skitourowy do dzikiego Kazbegi",
+      "image": "./assets/kazbegii.jpg",
+      "id": 7
     },
     {
       "name": "Skitury w Rumunii",
       "country": "Rumunia",
-      "start-date": "2023-02-20",
-      "end-date": "2023-03-06",
+      "start": "2023-02-20",
+      "end": "2023-03-06",
       "price": 4000,
       "places": 8,
-      "description": "Wyjazd skitourowy w dzikich górach Parang",
-      "photo": "assets/romania.jpg"
+      "description": "Skitoury w dzikich górach Parang",
+      "image": "./assets/romaniaa.jpg",
+      "id": 8
     }
   ]
 }
