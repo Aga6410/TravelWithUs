@@ -1,6 +1,7 @@
 import React from 'react';
-import Main from "../Main/Main";
+
 import {TravelsManager} from "../Main/TravelsManager";
+
 
 const Home = ({trips, setTrips}) => {
     return (

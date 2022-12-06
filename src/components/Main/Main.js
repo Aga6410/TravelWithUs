@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import "./main.scss"
 import {TravelsManager} from "./TravelsManager";
@@ -10,6 +11,7 @@ const Main = () => {
 
 export default Main;
 
+*/
 
 /*
 <section className="search-section">

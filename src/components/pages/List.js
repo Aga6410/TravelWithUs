@@ -1,7 +1,6 @@
-/*
 import React from 'react';
 
-const Contact = ({trips}) => {
+const List = ({trips}) => {
     return (
         <>
             <div>
@@ -16,5 +15,4 @@ const Contact = ({trips}) => {
     );
 };
 
-export default Contact;
-*/
+export default List;

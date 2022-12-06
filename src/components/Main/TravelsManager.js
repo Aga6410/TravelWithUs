@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Travel from "./Travel";
+import "./main.scss"
 
 
 const API_URL = 'http://localhost:3000';

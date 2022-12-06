@@ -14,10 +14,10 @@ const Header = () => {
                 <nav>
                     <ul className="header__nav">
                         <li className="nav__element">
-                            <a href="/" className="nav__link search">Wyszukaj wycieczkę</a>
+                            <Link to="/" className="nav__link search">Wyszukaj wycieczkę</Link>
                         </li>
                         <li className="nav__element">
-                            <a href="/login" className="nav__link reserved">Zarezerwowane wycieczki</a>
+                            <Link to="/list" className="nav__link reserved">Zarezerwowane wycieczki</Link>
                         </li>
                         <li className="nav__element">
                             <Link to="/contact" className="nav__link contact">Kontakt</Link>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Travel = ({title, country, image, start,end, price, description, places, setTrips }) => {
 
     const clickHandler = (e) => {

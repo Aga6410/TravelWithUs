@@ -1,4 +1,3 @@
-/*
 import React from 'react';
 
 const Contact = () => {
@@ -9,7 +8,8 @@ const Contact = () => {
     );
 };
 
-export default Contact;*/
+export default Contact;
+/*
 import React from 'react';
 
 const Contact = ({trips}) => {
@@ -28,3 +28,4 @@ const Contact = ({trips}) => {
 };
 
 export default Contact;
+*/
