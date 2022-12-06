@@ -74,7 +74,7 @@
       "price": 4000,
       "places": 8,
       "description": "Wyjazd skitourowy do dzikiego Kazbegi",
-      "image": "./assets/kazbegii.jpg",
+      "image": "/assets/kazbegii.jpg",
       "id": 7
     },
     {
@@ -85,7 +85,7 @@
       "price": 4000,
       "places": 8,
       "description": "Skitoury w dzikich górach Parang",
-      "image": "./assets/romaniaa.jpg",
+      "image": "../assets\\romaniaa.jpg",
       "id": 8
     }
   ]

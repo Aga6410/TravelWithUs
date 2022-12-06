@@ -4,7 +4,7 @@ import Travel from "./Travel";
 
 const API_URL = 'http://localhost:3000';
 
-const TravelsManager = () => {
+const TravelsManager = ({trips, setTrips}) => {
     const [travels, setTravels] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -39,8 +39,9 @@ const TravelsManager = () => {
     return <section className="search-section">
         <div className="search-section container">
             <div className="trips-to-select">
-                {travels.map(travels=> {
+                {travels.map(travels => {
                     return <Travel
+                        key={travels.id}
                         title={travels.name}
                         country={travels.country}
                         image={travels.image}
@@ -49,6 +50,7 @@ const TravelsManager = () => {
                         price={travels.price}
                         description={travels.description}
                         places = {travels.places}
+                        setTrips={setTrips}
                     />
             })}
             </div>

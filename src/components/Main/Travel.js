@@ -1,6 +1,12 @@
 import React from "react";
 
-const Travel = ({title, country, image, start,end, price, description, places }) => {
+const Travel = ({title, country, image, start,end, price, description, places, setTrips }) => {
+
+    const clickHandler = (e) => {
+        e.preventDefault();
+        setTrips(prev => [...prev, {title, country, price}]);
+    }
+
     return(
         <div className="travel-box">
             <h2>{title}</h2>
@@ -12,7 +18,12 @@ const Travel = ({title, country, image, start,end, price, description, places })
             <p>{description}</p>
             <p>Liczba miejsc: {places}</p>
             <div className="button-all">
-                <button className="buy-button">Kup</button>
+                <button
+                    className="buy-button"
+                    onClick={clickHandler}
+                >
+                        Kup
+                </button>
                 <div className="plus-icon"></div>
             </div>
         </div>

@@ -1,27 +1,26 @@
+import {Route, Routes,BrowserRouter } from "react-router-dom";
+import {useState} from "react";
+import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
+/*import ReservedTravels from "./components/pages/ReservedTravels";*/
+import Login from "./components/pages/Login"
 import Header from "./components/Header";
-import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import {TravelsManager} from "./components/Main/TravelsManager";
-/*import {Route, Routes,BrowserRouter } from "react-router-dom";*/
+import "./scss/global.scss";
 
 function App() {
+  const [trips, setTrips] = useState([]);
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-        <TravelsManager/>
-    </div>
-  );
+      <BrowserRouter>
+          <Header />
+          <Routes>
+              <Route path="/" element={<Home trips={trips} setTrips={setTrips} />} />
+              <Route path="login" element={<Login trips={trips} setTrips={setTrips} />} />
+              <Route path="contact" element={<Contact trips={trips} setTrips={setTrips} />} />
+          </Routes>
+          <Footer />
+      </BrowserRouter>
+  )
 }
 
 export default App;
-/*
-<BrowserRouter>
-    <Routes>
-        <Route path="/" element={Main/>}/>
-        <Route path="contact" element = {<Contact/>}/>
-        <Route path="reservedTrips" element={<ReservedTrips/>} >
-    </Routes>
-</BrowserRouter>
-*/
