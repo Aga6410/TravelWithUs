@@ -23,6 +23,9 @@
     align-items: center;
     min-width: 22%;
     font-family: $font-text;
+  }
+  .travel-box:hover {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
 
   }
   .travel-image {
@@ -41,6 +44,7 @@
     margin:10px;
    font-weight: bold;
     color:green;
+    cursor: pointer;
   }
   .plus-icon {
     content: url("../../assets/plus.svg");

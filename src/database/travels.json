@@ -1,3 +1,4 @@
+
 {
   "travels":[
     {
@@ -9,7 +10,8 @@
       "places": 10,
       "description": "Wypoczynek na piaszczytych plażach",
       "image": "https://assets.euromoneydigital.com/dims4/default/90a4827/2147483647/strip/true/crop/4160x3060+0+0/resize/840x618!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F1e%2F9b%2Fee6cb2414540b95c4851b4198575%2Fgreece-athens-adobemarch22.jpeg",
-      "id": 1
+      "id": 1,
+      "amount": 1
     },
     {
       "name": "Piękno Madagaskaru",
@@ -20,7 +22,8 @@
       "places":10,
       "description": "Wycieczka objazdowa po Madagaskarze",
       "image": "../assets/madagaskarr.jpg",
-      "id": 2
+      "id": 2,
+      "amount": 1
     },
     {
       "name": "Odkryj Reunion",
@@ -31,7 +34,8 @@
       "places": 8,
       "description":"Wycieczka po Reunion",
       "image": "../assets/reunionn.jpg",
-      "id": 3
+      "id": 3,
+      "amount": 1
     },
     {
       "name": "Najwyższy szczyt Niemiec",
@@ -42,7 +46,8 @@
       "places": 15,
       "description": "Wyjście na Zugspitze",
       "image": "../assets/zugspitzee.jpg",
-      "id": 4
+      "id": 4,
+      "amount": 1
     },
     {
       "name": "Pireneje",
@@ -53,7 +58,8 @@
       "places": 15,
       "description": "Wycieczki górskie po Pirenejach ",
       "image":"../assets/pyreneess.jpg",
-      "id": 5
+      "id": 5,
+      "amount": 1
     },
     {
       "name": "Szusuj po puchu",
@@ -64,7 +70,8 @@
       "places": 10,
       "description": "Wyjazd do resortu w Gudauri",
       "image": "/assets/gudaurii.jpg",
-      "id": 6
+      "id": 6,
+      "amount": 1
     },
     {
       "name": "Skitury w Kazbegi",
@@ -75,7 +82,8 @@
       "places": 8,
       "description": "Wyjazd skitourowy do dzikiego Kazbegi",
       "image": "/assets/kazbegii.jpg",
-      "id": 7
+      "id": 7,
+      "amount": 1
     },
     {
       "name": "Skitury w Rumunii",
@@ -86,7 +94,8 @@
       "places": 8,
       "description": "Skitoury w dzikich górach Parang",
       "image": "../assets\\romaniaa.jpg",
-      "id": 8
+      "id": 8,
+      "amount": 1
     }
   ]
 }

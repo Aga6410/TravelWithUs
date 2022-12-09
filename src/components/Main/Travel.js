@@ -1,13 +1,16 @@
 import React from "react";
 
 
-const Travel = ({title, country, image, start,end, price, description, places, setTrips }) => {
+const Travel = ({title, country, image, start,end, price, description, places, amount, setTrips }) => {
 
     const clickHandler = (e) => {
         e.preventDefault();
-        setTrips(prev => [...prev, {title, country, price}]);
+        setTrips(prev => [...prev, {country, price, image, amount}]);
     }
-
+  /*  const handleChange = (el,d) => {
+        console.log(el, d)
+    }
+*/
     return(
         <div className="travel-box">
             <h2>{title}</h2>

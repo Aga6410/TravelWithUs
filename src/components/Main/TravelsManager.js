@@ -3,9 +3,10 @@ import Travel from "./Travel";
 import "./main.scss"
 
 
+
 const API_URL = 'http://localhost:3000';
 
-const TravelsManager = ({trips, setTrips}) => {
+const TravelsManager = ({trips, setTrips, handleChange}) => {
     const [travels, setTravels] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -51,7 +52,9 @@ const TravelsManager = ({trips, setTrips}) => {
                         price={travels.price}
                         description={travels.description}
                         places = {travels.places}
+                        amount = {travels.amount}
                         setTrips={setTrips}
+                        handleChange={handleChange}
                     />
             })}
             </div>
