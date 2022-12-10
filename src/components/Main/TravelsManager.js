@@ -38,12 +38,17 @@ const TravelsManager = ({trips, setTrips, handleChange}) => {
 
     if (loading) return <p>Trwa ładowanie danych...</p>
 
+    /*const handleChange = (el,d) => {
+        console.log(el, d)
+    }
+*/
     return <section className="search-section">
         <div className="search-section container">
             <div className="trips-to-select">
                 {travels.map(travels => {
                     return <Travel
                         key={travels.id}
+                        id={travels.id}
                         title={travels.name}
                         country={travels.country}
                         image={travels.image}

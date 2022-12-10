@@ -20,8 +20,14 @@ const Header = () => {
                             <Link to="/list" className="nav__link reserved">Zarezerwowane wycieczki</Link>
                         </li>
                         <li className="nav__element">
+                            <Link to="/login" className="nav__link login">Logowanie</Link>
+                        </li>
+                        <li className="nav__element">
                             <Link to="/contact" className="nav__link contact">Kontakt</Link>
                         </li>
+                        {/*<li className="nav__element">
+                            <Link to="/rejestracja" className="nav__link registration">Rejestracja</Link>
+                        </li>*/}
                     </ul>
                 </nav>
             </div>

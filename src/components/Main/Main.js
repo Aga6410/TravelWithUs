@@ -18,7 +18,7 @@ export default Main;
     <div className="search-section container">
         <form className="search-form">
             <input className="search-bar" type="text"/>
-            <button className= "search-button" type="submit">Wyszukaj swoją wymarzoną wycieczkę </button>
+            <button className= "search-button" type="submit">Szukaj</button>
         </form>
     </div>
 </section>*/

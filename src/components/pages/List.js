@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import "./../../scss/list.scss";
 
-const List = ({trips, setTrips, handleChange}) => {
+const List = ({trips, setTrips}) => {
     const[price, setPrice] = useState(0);
 
     const handlePrice = () => {
@@ -12,15 +12,32 @@ const List = ({trips, setTrips, handleChange}) => {
         setPrice(ans);
     }
 
-    const handleRemove = (id) =>{
-        const arr= trips.filter((el)=> el.id!==id);
+    const handleRemove = (e, id) =>{
+        e.preventDefault();
+        console.log(id);
+        const arr = trips.filter((el) => el.id !== id);
+        console.log(arr);
         setTrips(arr);
-        /*handlePrice()*/
+
     }
 
     useEffect(()=>{
         handlePrice();
     })
+    const handleChange = (el,d) => {
+        /*console.log(el, d)*/
+        let ind = -1;
+        trips.forEach((data, index)=> {
+            if(data.id === el.id)
+                ind = index;
+        });
+        const tempArr = trips;
+        tempArr[ind].amount +=d;
+
+        if(tempArr[ind].amount ===0)
+            tempArr[ind].amount =1;
+        setTrips([...tempArr])
+    }
     return (
         <>
             <section className="listOfTrips">
@@ -28,22 +45,26 @@ const List = ({trips, setTrips, handleChange}) => {
                     <h2 className="listOfTrips_title">Lista zarezerwowanych wycieczek</h2>
                     <ul className="cart">
                         {
-                            trips.map((el, i) =>
-                                <li className="cart_box" key={i}>
-                                    <div className="cart_img">
-                                        <img src={el.image} alt=""/>
-                                        <p>{el.country} </p>
-                                    </div>
-                                    <div className="cart_buttons">
-                                        <button className="button-plus" onClick={() =>handleChange(el, "+")}> + </button>
-                                        <button>{el.amount}</button>
-                                        <button className="button-minus" onClick={() =>handleChange(el, "-")}> - </button>
-                                    </div>
-                                    <div className="cart_price">
-                                        <span> {el.price}zł </span>
-                                        <button onClick={()=>handleRemove(el.id)}>Usuń</button>
-                                    </div>
-                            </li>)
+                            trips.map((el, i) => {
+                                console.log(el);
+                                return (
+                                    <li className="cart_box" key={i}>
+                                        <div className="cart_img">
+                                            <img src={el.image} alt=""/>
+                                            <p>{el.country} </p>
+                                        </div>
+                                        <div className="cart_buttons">
+                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}> + </button>
+                                            <button>{el.amount}</button>
+                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}> - </button>
+                                        </div>
+                                        <div className="cart_price">
+                                            <span> {el.price}zł </span>
+                                            <button onClick={(e)=>handleRemove(e, el.id)}>Usuń</button>
+                                        </div>
+                                    </li>
+                                )
+                            })
                         }
 
                     <div className="total">

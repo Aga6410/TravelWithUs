@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .cart {
     width:60%;
   }
@@ -43,7 +44,7 @@
     margin-left:10px;
   }
   .button-plus {
-    content: url("../assets/plus.svg");
+    content: url("../../public/assets/plus.svg");
     cursor: pointer;
     display: block;
     height: 25px;
@@ -51,7 +52,7 @@
     filter: invert(76%) sepia(81%) saturate(1754%) hue-rotate(73deg) brightness(96%) contrast(87%);
   }
   .button-minus {
-    content: url("../assets/minus.svg");
+    content: url("../../public/assets/minus.svg");
     cursor: pointer;
     display: block;
     height: 25px;

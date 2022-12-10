@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            Test
+            Tu będzie stopka
         </div>
     );
 };

@@ -1,0 +1,63 @@
+@import "../settings/_typography";
+@import "../settings/_fonts.scss";
+
+.login {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    padding-top: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: $font-text;
+    padding-bottom: 10px;
+    padding-top:10px;
+  }
+  .registration-form {
+    padding:10px;
+
+  }
+  .input-placeholder {
+    width: 190px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+  }
+  .register-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+  }
+  .login-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+  }
+  .logout-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+
+  }
+
+}
+

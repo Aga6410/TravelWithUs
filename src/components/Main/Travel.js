@@ -1,20 +1,17 @@
 import React from "react";
 
 
-const Travel = ({title, country, image, start,end, price, description, places, amount, setTrips }) => {
+const Travel = ({title, country, image, start,end, price, description, places, amount, setTrips, id }) => {
 
     const clickHandler = (e) => {
         e.preventDefault();
-        setTrips(prev => [...prev, {country, price, image, amount}]);
+        setTrips(prev => [...prev, {country, price, image, amount, id}]);
     }
-  /*  const handleChange = (el,d) => {
-        console.log(el, d)
-    }
-*/
+
     return(
         <div className="travel-box">
             <h2>{title}</h2>
-            <img src={image} alt="" className="travel-image"/>
+            <img src={process.env.PUBLIC_URL + image} alt="" className="travel-image"/>
             <h3>{country}</h3>
             <p>Cena: {price}zł</p>
             {/*<p>{start}</p>
