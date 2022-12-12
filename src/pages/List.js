@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "./../../scss/list.scss";
+import "../scss/elements/_list.scss";
 
 
 const List = ({trips, setTrips}) => {
@@ -58,6 +58,7 @@ const List = ({trips, setTrips}) => {
                                             <button className="button-plus" onClick={() =>handleChange(el, +1)}>  </button>
                                             <button>{el.amount}</button>
                                             <button className="button-minus" onClick={() =>handleChange(el, -1)}></button>
+                                            <img src={process.env.PUBLIC_URL + "/assets/plus.svg"} />
                                         </div>
                                         <div className="cart_price">
                                             <span> {el.price}zł </span>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Travel from "./Travel";
-import "./main.scss"
+import "../../scss/main.scss"
 
 
 

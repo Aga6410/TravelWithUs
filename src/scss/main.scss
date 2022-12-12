@@ -1,8 +1,17 @@
-@import "./../../settings/_colors.scss";
-@import "./../../settings/_fonts.scss";
-@import "./../../settings/_typography.scss";
-@import "travel.scss";
-@import "./../../scss/list.scss";
+@import "reset/reset";
+
+@import "settings/_colors";
+@import "settings/_fonts";
+@import "settings/_base";
+@import "settings/_mixins";
+
+@import "elements/_travel";
+@import "elements/_list";
+@import "elements/_login";
+@import "elements/_header";
+@import "elements/_footer";
+
+
 
 
 

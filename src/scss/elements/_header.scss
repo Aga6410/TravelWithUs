@@ -1,5 +1,6 @@
-@import "./../../settings/_colors.scss";
-@import "./../../settings/_fonts.scss";
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/base";
 
 .header {
   height: 70px;

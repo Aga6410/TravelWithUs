@@ -1,6 +1,6 @@
-@import "../settings/_fonts.scss";
-@import "../settings/_colors.scss";
-@import "../settings/_typography.scss";
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/base";
 
 
 .listOfTrips {
@@ -47,7 +47,7 @@
     margin-left:10px;
   }
   .button-plus {
-    background: no-repeat url("../../public/assets/plus.svg");
+    background: no-repeat url("../../../public/assets/plus.svg");
     cursor: pointer;
     display: block;
     height: 50px;
@@ -55,7 +55,7 @@
     filter: invert(76%) sepia(81%) saturate(1754%) hue-rotate(73deg) brightness(96%) contrast(87%);
   }
   .button-minus {
-    content: url("../../public/assets/minus.svg");
+    content: url("../../../public/assets/minus.svg");
     cursor: pointer;
     display: block;
     height: 25px;

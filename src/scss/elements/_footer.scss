@@ -1,0 +1,65 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/base";
+@import "../reset/reset";
+
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &_logo {
+    display: flex;
+    align-items: center;
+  }
+  &_logo_icon {
+    content: url("../../../public/assets/logo.svg");
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    filter: invert(75%) sepia(70%) saturate(2266%) hue-rotate(77deg) brightness(97%) contrast(93%);
+  }
+  &_logo_title {
+    color: $color-line;
+    font-family: $font-logo;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 30px;
+    padding-left:5px;
+  }
+
+  &_copy {
+    font-size: 10px;
+    line-height: 5px;
+    color: grey;
+    margin-top: 10px;
+    margin-left: 40px;
+
+  }
+
+  &_icons {
+  a {
+    margin: 0 10px;
+  }
+ &_facebook {
+   color: blue;
+}
+    &_instagram {
+      color: rebeccapurple;
+    }
+    &_youtube {
+      color: red;
+    }
+  }
+}

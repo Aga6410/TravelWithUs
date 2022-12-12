@@ -1,12 +1,12 @@
 import {Route, Routes,BrowserRouter } from "react-router-dom";
 import {useState} from "react";
-import Home from "./components/pages/Home";
-import Contact from "./components/pages/Contact";
-import List from "./components/pages/List";
-import Login from "./components/pages/Login"
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import List from "./pages/List";
+import Login from "./pages/Login"
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
-import "./scss/global.scss";
+import "./scss/elements/_global.scss";
 
 
 function App() {

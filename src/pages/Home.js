@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {TravelsManager} from "../Main/TravelsManager";
+import {TravelsManager} from "../components/Main/TravelsManager";
 
 
 const Home = ({trips, setTrips}) => {
