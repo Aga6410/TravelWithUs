@@ -9,7 +9,7 @@
       "price": 5000,
       "places": 10,
       "description": "Wypoczynek na piaszczytych plażach",
-      "image": "https://assets.euromoneydigital.com/dims4/default/90a4827/2147483647/strip/true/crop/4160x3060+0+0/resize/840x618!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F1e%2F9b%2Fee6cb2414540b95c4851b4198575%2Fgreece-athens-adobemarch22.jpeg",
+      "image": "/assets/mauritiuss.jpg",
       "id": 1,
       "amount": 1
     },
@@ -20,7 +20,7 @@
       "end": "2023-03-01",
       "price":6000,
       "places":10,
-      "description": "Wycieczka objazdowa po Madagaskarze",
+      "description": "Wycieczka po Madagaskarze",
       "image": "/assets/madagaskarr.jpg",
       "id": 2,
       "amount": 1

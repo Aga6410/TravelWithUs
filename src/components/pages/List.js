@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import "./../../scss/list.scss";
 
+
 const List = ({trips, setTrips}) => {
     const[price, setPrice] = useState(0);
 
@@ -54,9 +55,9 @@ const List = ({trips, setTrips}) => {
                                             <p>{el.country} </p>
                                         </div>
                                         <div className="cart_buttons">
-                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}> + </button>
+                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}>  </button>
                                             <button>{el.amount}</button>
-                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}> - </button>
+                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}></button>
                                         </div>
                                         <div className="cart_price">
                                             <span> {el.price}zł </span>

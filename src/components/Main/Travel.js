@@ -17,7 +17,7 @@ const Travel = ({title, country, image, start,end, price, description, places, a
             {/*<p>{start}</p>
             <p>{end}</p>*/}
             <p>{description}</p>
-            <p>Liczba miejsc: {places}</p>
+            {/*<p>Liczba miejsc: {places}</p>*/}
             <div className="button-all">
                 <button
                     className="buy-button"
