@@ -1,0 +1,44 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/base";
+@import "../reset/reset";
+
+.form_app {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  form {
+    width:350px;
+    background-color: rgba(165, 225, 225, 0.8);
+    padding:0 60px;
+    border-radius:10px;
+    font-family: $font-text;
+/*display: flex;
+  !*  flex-direction: column;*!
+    align-items: center;*/
+  }
+  h2 {
+    color: #2395a2;
+    font-size: 20px;
+    font-family: $font-text;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-weight: bold;
+  }
+  &_button {
+    width: 100%;
+    height:50px;
+    padding:10px;
+    border:none;
+    background-color: #a790c4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   font-family: $font-text;
+    cursor: pointer;
+
+  }
+
+}
