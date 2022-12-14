@@ -16,7 +16,7 @@ const Footer = () => {
                         <div className ="footer_logo_icon"></div>
                         <a href="/" className="footer_logo_title">TravelWithUs</a>
                     </div>
-                    <span className="footer_copy">© 2022 AT, All Rights Reserved</span>
+                    <span className="footer_copy">© 2022 TravelWithUs, All Rights Reserved</span>
                 </div>
                 <div className="footer_icons">
                     <a

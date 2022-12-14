@@ -4,28 +4,25 @@ import {Link} from "react-router-dom";
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__container container">
+            <div className="header_container container">
                 <div className="logo">
                     <div className ="logo_icon"></div>
                     <a href="/" className="logo_title">TravelWithUs</a>
                 </div>
                 <nav>
-                    <ul className="header__nav">
-                        <li className="nav__element">
-                            <Link to="/" className="nav__link search">Wyszukaj wycieczkę</Link>
+                    <ul className="header_nav">
+                        <li className="nav_element">
+                            <Link to="/" className="nav_link search">Wyszukaj wycieczkę</Link>
                         </li>
-                        <li className="nav__element">
-                            <Link to="/list" className="nav__link reserved">Zarezerwowane wycieczki</Link>
+                        <li className="nav_element">
+                            <Link to="/list" className="nav_link reserved">Zarezerwowane wycieczki</Link>
                         </li>
-                        <li className="nav__element">
-                            <Link to="/login" className="nav__link login">Logowanie</Link>
+                        <li className="nav_element">
+                            <Link to="/login" className="nav_link login">Logowanie</Link>
                         </li>
-                        <li className="nav__element">
-                            <Link to="/contact" className="nav__link contact">Kontakt</Link>
+                        <li className="nav_element">
+                            <Link to="/contact" className="nav_link contact">Kontakt</Link>
                         </li>
-                        {/*<li className="nav__element">
-                            <Link to="/rejestracja" className="nav__link registration">Rejestracja</Link>
-                        </li>*/}
                     </ul>
                 </nav>
             </div>

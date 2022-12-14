@@ -23,6 +23,7 @@
     margin-bottom: 20px;
     margin-top:20px;
     color:$color-line;
+
   }
   .cart_box {
     display:flex;
@@ -40,27 +41,41 @@
   .cart_img{
     display:flex;
     width:400px;
-
+    align-items: center;
   }
   .cart_img p {
     font-weight: bold;
     margin-left:10px;
+    font-family: $font-text;
+    color: #413f3f;
   }
   .button-plus {
-    background: no-repeat url("../../../public/assets/plus.svg");
     cursor: pointer;
     display: block;
-    height: 50px;
-    width: 50px;
-    filter: invert(76%) sepia(81%) saturate(1754%) hue-rotate(73deg) brightness(96%) contrast(87%);
+    height: 30px;
+    width: 30px;
+    background-color: lightgreen;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  .button_amount {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
   }
   .button-minus {
-    content: url("../../../public/assets/minus.svg");
     cursor: pointer;
     display: block;
-    height: 25px;
-    width: 25px;
-    filter: invert(25%) sepia(92%) saturate(2500%) hue-rotate(354deg) brightness(92%) contrast(87%);
+    height: 30px;
+    width: 30px;
+    background-color: #ec6868;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+  }
+  .cart_price {
+    display: flex;
   }
   .cart_buttons {
     display: flex;
@@ -75,13 +90,12 @@
     padding:5px;
     font-weight: bold;
     letter-spacing:2px;
-    border:none;
+    border: 1px solid grey;
     outline: none;
     color:white;
-    background-color: indianred;
+    background-color: #ec6868;
     border-radius: 5px;
     cursor:pointer;
-
   }
   .cart_box div:nth-child(3) button:hover {
     background-color: red;
@@ -91,21 +105,46 @@
     padding:5px 10px;
     border-radius: 5px;
     margin-right: 10px;
+    border: 1px solid grey;
   }
   .total {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
   }
   .total span:nth-child(1) {
     font-size:16px;
-    color:blue;
+    color:dodgerblue;
     font-weight: bold;
     font-family: $font-text;
 }
   .total span:nth-child(2) {
     font-size:16px;
-    color:green;
+    color: #039603;
     font-weight: bold;
     font-family: $font-text;
   }
 }
+
+/*
+.button-plus {
+  background: no-repeat url("../../../public/assets/plus.svg");
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  width: 50px;
+  filter: invert(76%) sepia(81%) saturate(1754%) hue-rotate(73deg) brightness(96%) contrast(87%);
+}*/
+
+/*
+.button-minus {
+  background: no-repeat url("../../../public/assets/minus.svg");
+  !*content:url("../../../public/assets/minus.svg");*!
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  width: 50px;
+  filter: invert(25%) sepia(92%) saturate(2500%) hue-rotate(354deg) brightness(92%) contrast(87%);
+}*/

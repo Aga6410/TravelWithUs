@@ -55,10 +55,10 @@ const List = ({trips, setTrips}) => {
                                             <p>{el.country} </p>
                                         </div>
                                         <div className="cart_buttons">
-                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}>  </button>
-                                            <button>{el.amount}</button>
-                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}></button>
-                                            <img src={process.env.PUBLIC_URL + "/assets/plus.svg"} />
+                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}> + </button>
+                                            <button className="button_amount">{el.amount}</button>
+                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}> - </button>
+                                            {/*<img src={process.env.PUBLIC_URL + "/assets/plus.svg"} />*/}
                                         </div>
                                         <div className="cart_price">
                                             <span> {el.price}zł </span>

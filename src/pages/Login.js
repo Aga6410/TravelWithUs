@@ -51,9 +51,9 @@ function Login() {
     };
 
     return (
-        <section className="login">
-            <div className="login__container ">
-                <h3> Rejestracja  </h3>
+        <section className="logins">
+            <div className="logins_container container">
+                <h3 className="logins_container_title"> Rejestracja  </h3>
                 <div className="registration-form">
                     <input className="input-placeholder email1"
                         placeholder="Email..."
@@ -86,7 +86,7 @@ function Login() {
                         }}
                     />
 
-                    <button className="login-button" onClick={login}> Zaloguj się </button>
+                    <button className="logins-button" onClick={login}> Zaloguj się </button>
                 </div>
 
                 <h3> Użytkownik zalogowany jako </h3>

@@ -6,12 +6,13 @@
   height: 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 
-  &__container {
+  &_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     background-color: $color-header;
+
     .logo {
       display: flex;
       align-items: center;
@@ -36,7 +37,7 @@
   }
 
   .nav {
-    &__element {
+    &_element {
       padding: 0 26px;
 
       &:last-child {
@@ -44,7 +45,7 @@
       }
     }
 
-    &__link {
+    &_link {
       color: grey;
       font-weight: 700;
       font-size: 0.6875rem;
@@ -61,15 +62,15 @@
     }
   }
 
-  &__nav {
+  &_nav {
     display: flex;
 
-      .nav__element {
+      .nav_element {
         padding: 0;
         list-style-type:none
       }
 
-      .nav__link {
+      .nav_link {
         display: block;
         padding: 14px 20px;
       }

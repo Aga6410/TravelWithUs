@@ -1,71 +1,94 @@
 import React, {useState} from 'react';
-import FormInput from "./FormInput";
 import "../scss/elements/_contact.scss"
 
 
 const Contact = () => {
-    const[values, setValues] = useState({
-        userName: "",
-        email: "",
-        phone: "",
-        message: "",
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+    const [errors, setErrors] = useState([]) ;
 
-    });
-    const inputs = [
-        {
-            id: 1,
-            name:"userName",
-            type: "text",
-            placeholder: "Imię",
-            label: "Imię",
-        },
-        {
-            id: 2,
-            name:"email",
-            type: "text",
-            placeholder: "Email",
-            label: "Email",
-        },
-        {
-            id: 3,
-            name:"phone",
-            type: "text",
-            placeholder: "Telefon",
-            label: "Telefon",
-        },
-        {
-            id: 4,
-            name:"message",
-            type: "text",
-            placeholder: "Wiadomość",
-            label: "Wiadomość",
-        }
-    ];
+    const handleChangeName = (e) => {
+        setName(e.target.value);
+    }
 
+    const handleChangeEmail = (e) => {
+        setEmail(e.target.value);
+    }
+
+    const handleChangePhone= (e) => {
+        setPhone(e.target.value);
+    }
+
+    const handleChangeMessage = (e) => {
+        setMessage(e.target.value);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const validationErrors = [];
 
-    };
-    const onChange = (e) => {
-        setValues({...values, [e.target.name]: e.target.value});
+        if (!/^[A-Za-z0-9]{3,16}$/i.test(name) === true) {
+            validationErrors.push('Imię powinno mieć pomiędzy 3 a 16 liter i nie powinno zawierać żadnych specjalnych znaków')
+        }
+
+        if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email) === true) {
+            validationErrors.push('Emial powinien mieć poprawny format')
+        }
+        if (!/^\d{9}$/i.test(phone) === true) {
+            validationErrors.push('Telefon powinien zawierać same cyfry, bez spacji, 9 cyfr')
+        }
+
+        setErrors(validationErrors);
     }
-    console.log(values)
+
     return (
-        <div className="form_app container">
-            <form onSubmit={handleSubmit}>
-                <h2>Formularz kontaktowy</h2>
-                {inputs.map(input => (
-                <FormInput
-                    key={input.id}
-                    {... input}
-                    value={values[input.name]}
-                    onChange={onChange}
-                />
-                ))}
-                <button className="form_app_button">Wyślij</button>
-            </form>
-        </div>
+        <section className='contacts'>
+            <div className='contacts container'>
+                <div className='contacts_box'>
+                    <h2 className='contacts_box_title'>Formularz kontaktowy</h2>
+                    <div className='contacts_box_form'>
+                        <form className='contacts_box_form_container' onSubmit={handleSubmit}>
+                            <label className='contacts_box_form_container_label'>Imię</label>
+                            <input className='contacts_box_form_container_input'
+                                   type="text"
+                                   value={name}
+                                   name="name"
+                                   placeholder="Imię"
+                                   required
+                                   onChange={handleChangeName} />
+                            <label className='contacts_box_form_container_label'>Email</label>
+                            <input className='contacts_box_form_container_input'
+                                   type="text"
+                                   value={email}
+                                   name="email"
+                                   placeholder="Email"
+                                   required
+                                   onChange={handleChangeEmail}/>
+                            <label className='contacts_box_form_container_label'>Telefon</label>
+                            <input className='contacts_box_form_container_input'
+                                   type="text"
+                                   value={phone}
+                                   name="phone"
+                                   placeholder="Telefon"
+                                   required
+                                   onChange={handleChangePhone}/>
+                            <label className='contacts_box_form_container_label'>Wiadomość</label>
+                            <textarea className='contacts_box_form_container_input'
+                                      value={message}
+                                      placeholder="Wiadomość"
+                                      required
+                                      onChange={handleChangeMessage}/>
+                            {
+                                errors.map((error, i) => <p className='contacts_box_form_container_error_message' key={i}>{error}</p>)
+                            }
+                            <button className='contacts_box_form_container_button' type="submit" >Wyślij</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
@@ -73,28 +96,3 @@ export default Contact;
 
 
 
-
-
-
-/*
-<div className="contact_form">
-    <form className="contact_form container">
-        <div className="formInput">
-            <label>Imię</label>
-            <input placeholder="Imię"/>
-        </div>
-        <div className="formInput">
-            <label>Email</label>
-            <input placeholder="Email" />
-        </div>
-        <div className="formInput">
-            <label>Telefon</label>
-            <input placeholder="Telefon"/>
-        </div>
-        <div className="formInput">
-            <label>Wiadomość</label>
-            <input placeholder="Wiadomość"/>
-        </div>
-    </form>
-</div>
-*/

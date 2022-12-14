@@ -1,9 +1,10 @@
 @import "../settings/base";
 @import "../settings/fonts";
 
-.login {
+.logins {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 
-  &__container {
+  &_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,7 @@
     color: green;
     cursor: pointer;
   }
-  .login-button {
+  .logins-button {
     width: 100px;
     height: 35px;
     border-radius: 10px;
