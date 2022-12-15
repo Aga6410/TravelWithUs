@@ -21,15 +21,15 @@ const Footer = () => {
                 <div className="footer_icons">
                     <a
                         href="https://www.facebook.com" className="footer_icons_facebook social">
-                    <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                    <FontAwesomeIcon icon={faFacebook} size="1.5x"/>
                     </a>
                     <a
                         href="https://www.instagram.com" className="footer_icons_instagram social">
-                    <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                    <FontAwesomeIcon icon={faInstagram}size="1.5x"/>
                     </a>
                     <a
                         href="https://www.youtube.com" className="footer_icons_youtube social">
-                    <FontAwesomeIcon icon={faYoutube} size="2x"/>
+                    <FontAwesomeIcon icon={faYoutube} size="1.5x"/>
                     </a>
                 </div>
             </div>

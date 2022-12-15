@@ -1,12 +1,9 @@
 import React from 'react';
-
+/*import "../scss/main.scss";*/
 import {TravelsManager} from "../components/Main/TravelsManager";
 
 
 const Home = ({trips, setTrips}) => {
-   /* const handleChange = (el,d) => {
-        console.log(el, d)
-    }*/
 
     return (
         <div className="App">

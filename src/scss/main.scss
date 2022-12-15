@@ -1,33 +1,20 @@
 @import "reset/reset";
 
+@import "settings/_base";
 @import "settings/_colors";
 @import "settings/_fonts";
-@import "settings/_base";
 @import "settings/_mixins";
+@import "settings/_index";
 
-@import "elements/_travel";
+@import "elements/_contact";
+@import "elements/_footer";
+@import "elements/_header";
 @import "elements/_list";
 @import "elements/_login";
-@import "elements/_header";
-@import "elements/_footer";
+@import "elements/_travel";
 
 
 
 
 
-/*
-.search-form {
-   display: flex;
-   flex-direction: column;
-   margin-top:30px;
 
-   .search-button {
-      background-color: white;
-      border:2px solid grey;
-      height: 35px;
-      width:300px;
-      margin:20px;
-      border-radius:10px;
-      font-weight: bold;
-      font-family: $font-text;
-   }*/

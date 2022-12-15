@@ -1,8 +1,5 @@
 import React, {useEffect, useState} from "react";
 import Travel from "./Travel";
-import "../../scss/main.scss"
-
-
 
 const API_URL = 'http://localhost:3000';
 
@@ -20,31 +17,15 @@ const TravelsManager = ({trips, setTrips, handleChange}) => {
             })
     }
 
- /*   const sellCar = (id) => {
-        setLoading(true)
-        fetch(`${API_URL}/cars/${id}`, {
-            method: 'DELETE'
-        })
-            .then(response => response.json())
-            .then(result => {
-                setCars(prevCars => prevCars.filter(car => car.id !== id));
-                setLoading(false);
-            })
-    }
-*/
     useEffect(() => {
         getTravels();
     }, [])
 
     if (loading) return <p>Trwa ładowanie danych...</p>
 
-    /*const handleChange = (el,d) => {
-        console.log(el, d)
-    }
-*/
-    return <section className="search-section">
-        <div className="search-section container">
-            <div className="trips-to-select">
+    return <section className="search_section">
+        <div className="search_section container">
+            <div className="search_section_trips_to_select">
                 {travels.map(travels => {
                     return <Travel
                         key={travels.id}
@@ -52,8 +33,6 @@ const TravelsManager = ({trips, setTrips, handleChange}) => {
                         title={travels.name}
                         country={travels.country}
                         image={travels.image}
-                        /*start={travels.start}
-                        end={travels.end}*/
                         price={travels.price}
                         description={travels.description}
                         places = {travels.places}

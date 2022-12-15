@@ -6,6 +6,7 @@
 
 .contacts {
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  height: 100vh;
 
   &_box {
     display: flex;
@@ -43,9 +44,6 @@
           border-radius: 5px;
           border: 1px solid grey;
           font-family: $font-text;
-          input:invalid[focused="true"]  {
-            border: 1px solid red;
-          }
         }
 
         &_error_message {

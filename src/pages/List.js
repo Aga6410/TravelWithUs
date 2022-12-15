@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "../scss/elements/_list.scss";
+/*import "../scss/elements/_list.scss";*/
 
 
 const List = ({trips, setTrips}) => {
@@ -26,7 +26,6 @@ const List = ({trips, setTrips}) => {
         handlePrice();
     })
     const handleChange = (el,d) => {
-        /*console.log(el, d)*/
         let ind = -1;
         trips.forEach((data, index)=> {
             if(data.id === el.id)
@@ -42,7 +41,7 @@ const List = ({trips, setTrips}) => {
     return (
         <>
             <section className="listOfTrips">
-                <div className="listOfTrips__container container">
+                <div className="listOfTrips_container container">
                     <h2 className="listOfTrips_title">Lista zarezerwowanych wycieczek</h2>
                     <ul className="cart">
                         {
@@ -55,10 +54,9 @@ const List = ({trips, setTrips}) => {
                                             <p>{el.country} </p>
                                         </div>
                                         <div className="cart_buttons">
-                                            <button className="button-plus" onClick={() =>handleChange(el, +1)}> + </button>
+                                            <button className="button_plus" onClick={() =>handleChange(el, +1)}> + </button>
                                             <button className="button_amount">{el.amount}</button>
-                                            <button className="button-minus" onClick={() =>handleChange(el, -1)}> - </button>
-                                            {/*<img src={process.env.PUBLIC_URL + "/assets/plus.svg"} />*/}
+                                            <button className="button_minus" onClick={() =>handleChange(el, -1)}> - </button>
                                         </div>
                                         <div className="cart_price">
                                             <span> {el.price}zł </span>
@@ -71,7 +69,7 @@ const List = ({trips, setTrips}) => {
 
                     <div className="total">
                         <span>Suma:</span>
-                        <span>{price} zł</span>
+                        <span> {price} zł</span>
                     </div>
                     </ul>
                 </div>

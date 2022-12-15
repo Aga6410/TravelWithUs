@@ -10,6 +10,12 @@ const Header = () => {
                     <a href="/" className="logo_title">TravelWithUs</a>
                 </div>
                 <nav>
+                    <input type="checkbox" className="menu_btn" id="menu_btn"/>
+                        <label htmlFor="menu_btn" className="menu_toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
                     <ul className="header_nav">
                         <li className="nav_element">
                             <Link to="/" className="nav_link search">Wyszukaj wycieczkę</Link>

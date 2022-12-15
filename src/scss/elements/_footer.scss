@@ -29,6 +29,11 @@
     height: 30px;
     width: 30px;
     filter: invert(75%) sepia(70%) saturate(2266%) hue-rotate(77deg) brightness(97%) contrast(93%);
+
+    @include mobile {
+      height: 15px;
+      width: 15px;
+    }
   }
   &_logo_title {
     color: $color-line;
@@ -36,7 +41,11 @@
     text-decoration: none;
     font-weight:bold;
     font-size: 30px;
-    padding-left:5px;
+    padding-left: 5px;
+
+    @include mobile {
+      font-size:15px;
+    }
   }
 
   &_copy {
@@ -46,11 +55,19 @@
     margin-top: 10px;
     margin-left: 40px;
 
+    @include mobile {
+      font-size: 8px;
+      margin-left: 20px;
+    }
   }
 
   &_icons {
   a {
     margin: 0 10px;
+
+    @include mobile {
+      margin: 0 5px;
+    }
   }
  &_facebook {
    color: blue;

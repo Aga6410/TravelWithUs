@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const Travel = ({title, country, image, start,end, price, description, places, amount, setTrips, id }) => {
+const Travel = ({title, country, image, price, description, amount, setTrips, id }) => {
 
     const clickHandler = (e) => {
         e.preventDefault();
@@ -9,23 +8,20 @@ const Travel = ({title, country, image, start,end, price, description, places, a
     }
 
     return(
-        <div className="travel-box">
+        <div className="travel_box">
             <h2>{title}</h2>
-            <img src={process.env.PUBLIC_URL + image} alt="" className="travel-image"/>
+            <img src={process.env.PUBLIC_URL + image} alt="" className="travel_box_image"/>
             <h3>{country}</h3>
-            <p>Cena: {price}zł</p>
-            {/*<p>{start}</p>
-            <p>{end}</p>*/}
+            <h4>Cena: {price}zł</h4>
             <p>{description}</p>
-            {/*<p>Liczba miejsc: {places}</p>*/}
-            <div className="button-all">
+            <div className="button_all">
                 <button
-                    className="buy-button"
+                    className="button_all_buy"
                     onClick={clickHandler}
                 >
                         Kup
                 </button>
-                <div className="plus-icon"></div>
+                <div className="button_all_plus_icon"></div>
             </div>
         </div>
     );

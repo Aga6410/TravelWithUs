@@ -6,8 +6,7 @@ import List from "./pages/List";
 import Login from "./pages/Login"
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
-import "./scss/elements/_global.scss";
-
+import "./scss/main.scss";
 
 function App() {
   const [trips, setTrips, handleChange] = useState([]);
