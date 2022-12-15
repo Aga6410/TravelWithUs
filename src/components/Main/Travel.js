@@ -10,7 +10,7 @@ const Travel = ({title, country, image, price, description, amount, setTrips, id
     return(
         <div className="travel_box">
             <h2>{title}</h2>
-            <img src={process.env.PUBLIC_URL + image} alt="" className="travel_box_image"/>
+            <img src={process.env.PUBLIC_URL + image} alt="photo" className="travel_box_image"/>
             <h3>{country}</h3>
             <h4>Cena: {price}zł</h4>
             <p>{description}</p>
