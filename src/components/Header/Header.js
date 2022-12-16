@@ -24,9 +24,6 @@ const Header = () => {
                             <Link to="/list" className="nav_link reserved">Zarezerwowane wycieczki</Link>
                         </li>
                         <li className="nav_element">
-                            <Link to="/login" className="nav_link login">Logowanie</Link>
-                        </li>
-                        <li className="nav_element">
                             <Link to="/contact" className="nav_link contact">Kontakt</Link>
                         </li>
                     </ul>
