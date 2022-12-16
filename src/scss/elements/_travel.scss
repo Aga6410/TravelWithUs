@@ -1,11 +1,8 @@
-@import "../settings/base";
-@import "../settings/fonts";
-
-
 .search_section {
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 
   &_trips_to_select {
     display: flex;

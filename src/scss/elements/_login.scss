@@ -1,33 +1,38 @@
 .logins {
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 
   &_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align:center;
+    justify-content: center;
+    text-align: center;
     padding-top: 40px;
   }
   h3 {
     font-size: 20px;
-    font-family: $font-text;
     padding-bottom: 10px;
     padding-top:10px;
+    color: $color-title;
+    font-weight: bold;
   }
-  .registration-form {
-    padding:10px;
+  .registration_form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  }
-  .input-placeholder {
+  .input_placeholder {
     width: 190px;
     height: 35px;
     border-radius: 10px;
     border: 2px solid grey;
     margin: 10px;
   }
-  .register-button {
+  .register_button {
     width: 100px;
     height: 35px;
     border-radius: 10px;
@@ -37,7 +42,14 @@
     color: green;
     cursor: pointer;
   }
-  .logins-button {
+  .log_form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logins_button {
     width: 100px;
     height: 35px;
     border-radius: 10px;
@@ -47,7 +59,7 @@
     color: green;
     cursor: pointer;
   }
-  .logout-button {
+  .logout_button {
     width: 100px;
     height: 35px;
     border-radius: 10px;

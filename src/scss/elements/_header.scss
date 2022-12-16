@@ -16,24 +16,23 @@
     .logo {
       display: flex;
       align-items: center;
-    }
 
-    .logo_icon {
-      content: url("../../../public/assets/logo.svg");
-      cursor: pointer;
-      height: 30px;
-      width: 30px;
-      filter: invert(75%) sepia(70%) saturate(2266%) hue-rotate(77deg) brightness(97%) contrast(93%);
+      &_icon {
+        content: url("../../../public/assets/logo.svg");
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        filter: invert(75%) sepia(70%) saturate(2266%) hue-rotate(77deg) brightness(97%) contrast(93%);
+      }
 
-    }
-
-    .logo_title {
-      color: $color-line;
-      font-family: $font-logo;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 30px;
-      padding-left: 5px;
+      &_title {
+        color: $color-line;
+        font-family: $font-logo;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 30px;
+        padding-left: 5px;
+      }
     }
   }
 
@@ -68,7 +67,7 @@
   &_nav {
     display: flex;
 
-    @include mobile {
+    @include tablet  {
       position: absolute;
       left: 0;
       top: 70px;
@@ -99,7 +98,7 @@
     left: -9999px;
     opacity: 0;
 
-    @include mobile {
+    @include tablet  {
       &:checked {
         ~ .header_nav {
           display: flex;
@@ -138,7 +137,7 @@
       }
     }
 
-    @include mobile {
+    @include tablet {
       display: block;
     }
   }

@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-/*import "../scss/elements/_list.scss";*/
-
 
 const List = ({trips, setTrips}) => {
     const[price, setPrice] = useState(0);
@@ -19,7 +17,6 @@ const List = ({trips, setTrips}) => {
         const arr = trips.filter((el) => el.id !== id);
         console.log(arr);
         setTrips(arr);
-
     }
 
     useEffect(()=>{
@@ -66,7 +63,6 @@ const List = ({trips, setTrips}) => {
                                 )
                             })
                         }
-
                     <div className="total">
                         <span>Suma:</span>
                         <span> {price} zł</span>
