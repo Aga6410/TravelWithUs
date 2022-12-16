@@ -1,0 +1,135 @@
+.listOfTrips {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  min-height: 100vh;
+  display: flex;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top:20px;
+    color:$color-line;
+  }
+
+  .cart {
+    max-width: 1000px;
+
+    &_box {
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom:2px solid grey;
+      padding-bottom: 10px;
+    }
+    &_img {
+      display:flex;
+      width: 400px;
+      align-items: center;
+
+      @include mobile {
+       width: 200px;
+      }
+      p {
+        font-weight: bold;
+        margin-left: 10px;
+        font-family: $font-text;
+        color: #413f3f;
+      }
+    }
+  }
+
+  .cart_box img{
+    width:80px;
+    height:60px;
+    border-radius: 10px;
+  }
+
+  .cart_img p {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #413f3f;
+  }
+  .button_plus {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: lightgreen;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  .button_amount {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+
+  }
+  .button_minus {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: #ec6868;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  .cart_price {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .cart_buttons {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .cart_box div:nth-child(2) button {
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 5px;
+
+  }
+  .cart_box div:nth-child(3) button {
+    padding:5px;
+    font-weight: bold;
+    border: 1px solid grey;
+    outline: none;
+    color:white;
+    background-color: #ec6868;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .cart_box div:nth-child(3) button:hover {
+    background-color: red;
+  }
+  .cart_box div:nth-child(3) span {
+    background-color: lightgreen;
+    padding:5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .total span:nth-child(1) {
+    font-size:16px;
+    color:dodgerblue;
+    font-weight: bold;
+}
+  .total span:nth-child(2) {
+    font-size:16px;
+    color: #039603;
+    font-weight: bold;
+  }
+}

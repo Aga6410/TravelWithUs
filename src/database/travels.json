@@ -1,0 +1,100 @@
+{
+  "travels":[
+    {
+      "name":" Wypoczynek na wyspie",
+      "country": "Mauritius",
+      "start": "2023-01-20",
+      "end": "2023-02-01",
+      "price": 5000,
+      "places": 10,
+      "description": "Wypoczynek na piaszczytych plażach",
+      "image": "/assets/mauritiuss.jpg",
+      "id": 1,
+      "amount": 1
+    },
+    {
+      "name": "Piękno Madagaskaru",
+      "country": "Madagaskar",
+      "start": "2023-02-15",
+      "end": "2023-03-01",
+      "price":6000,
+      "places":10,
+      "description": "Wycieczka po Madagaskarze",
+      "image": "/assets/madagaskarr.jpg",
+      "id": 2,
+      "amount": 1
+    },
+    {
+      "name": "Odkryj Reunion",
+      "country": "Reunion",
+      "start": "2023-02-27",
+      "end": "2023-03-13",
+      "price": 5000,
+      "places": 8,
+      "description":"Wycieczka po Reunion",
+      "image": "/assets/reunionn.jpg",
+      "id": 3,
+      "amount": 1
+    },
+    {
+      "name": "Najwyższy szczyt Niemiec",
+      "country": "Niemcy",
+      "start": "2023-07-01",
+      "end":"2023-07-09",
+      "price": 3000,
+      "places": 15,
+      "description": "Wyjście na Zugspitze",
+      "image": "/assets/zugspitzee.jpg",
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "name": "Pireneje",
+      "country": "Francja",
+      "start": "2023-07-01",
+      "end":"2023-07-09",
+      "price": 4000,
+      "places": 15,
+      "description": "Wycieczki górskie po Pirenejach ",
+      "image":"/assets/pyreneess.jpg",
+      "id": 5,
+      "amount": 1
+    },
+    {
+      "name": "Szusuj po puchu",
+      "country": "Gruzja",
+      "start": "2023-03-20",
+      "end": "2023-04-01",
+      "price": 4500,
+      "places": 10,
+      "description": "Wyjazd do resortu w Gudauri",
+      "image": "/assets/gudaurii.jpg",
+      "id": 6,
+      "amount": 1
+    },
+    {
+      "name": "Skitury w Kazbegi",
+      "country": "Gruzja",
+      "start": "2023-03-20",
+      "end": "2023-04-01",
+      "price": 4000,
+      "places": 8,
+      "description": "Wyjazd skitourowy do dzikiego Kazbegi",
+      "image": "/assets/kazbegii.jpg",
+      "id": 7,
+      "amount": 1
+    },
+    {
+      "name": "Skitury w Rumunii",
+      "country": "Rumunia",
+      "start": "2023-02-20",
+      "end": "2023-03-06",
+      "price": 4000,
+      "places": 8,
+      "description": "Skitoury w dzikich górach Parang",
+      "image": "/assets/romaniaa.jpg",
+      "id": 8,
+      "amount": 1
+    }
+  ]
+}

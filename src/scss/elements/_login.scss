@@ -1,0 +1,75 @@
+.logins {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  display: flex;
+  min-height: 100vh;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    color: $color-title;
+    font-weight: bold;
+  }
+  .registration_form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input_placeholder {
+    width: 190px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+  }
+  .register_button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+  }
+  .log_form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logins_button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+  }
+  .logout_button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+
+  }
+
+}
+
